@@ -9,7 +9,7 @@ sap.ui.define([
 
 		return Controller.extend("zcursoaaapp1.controller.View1", {
 			onInit: function () {
-
+ 
 			}
 		});
 	});
