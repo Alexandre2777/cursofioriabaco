@@ -8,7 +8,58 @@
 		<App id="app">
 			<pages>
 				<Page id="page" title="{i18n>title}">
-					<content />
+
+
+         
+
+		<content>	
+              
+
+            <Label text="Usuario" class="sapUiSmallMargin"/>
+			<Input id = 'idusuario' width="200px"/>
+			<Label text="Nome" class="sapUiSmallMargin"/>
+			<Input id = 'idnome' width="200px"/>
+            <Label text="Email" class="sapUiSmallMargin"/>
+			<Input id = 'idemail' width="200px"/>
+
+
+
+			<Button  text="Gravar" press="onPress"  type="Accept"/>
+		</content>
+					
+     <Table id="idtablealuno"  items="{/Curso001Set}">
+               
+         <columns>
+            <Column>
+                <Text text="{i18n>lblUsuario}" />
+            </Column>
+            <Column>
+                <Text text="{i18n>lblNome}" />
+            </Column>
+            <Column >
+                <Text text="{i18n>lblProjeto}" />
+            </Column>
+            <Column>
+                <Text text="{i18n>lblEmail}" />
+            </Column>  
+        </columns>
+        <items>
+            <ColumnListItem vAlign="Middle">
+                <cells>    
+                    <Text text="{Usuario}" />
+                    <Text text="{Nome}" />
+                    <Text text="{ProjetoSegw}" />
+                    <Text text="{Email}" />
+                </cells>        
+            </ColumnListItem>
+        </items>
+    </Table>
+
+
+
+
+
+
 				</Page>
 			</pages>
 		</App>
